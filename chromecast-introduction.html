@@ -21,7 +21,7 @@
         {% else %}
         Brightcove Player
         {% endif %} 
-        (details below).
+        (see <a href="#Implementation">Implementation</a> section below).
       </li>
       <li>
         Be sure the Chromecast device is on the same network as your device that will play the video.
@@ -54,7 +54,12 @@
         <!-- <p>
  As a Brightcove Player customer, you do not need to work with the code and configuration of the receiver application. By default, this plugin uses the Brightcove receiver app.
  </p> -->
-        <aside class="bcls-aside bcls-aside--information"> For Chromecast to work with domain restricted players, you should whitelist the Chromecast receiver's domain, which is <code translate="No">players.brightcove.net</code>.
+        <aside class="bcls-aside bcls-aside--information">Notes:
+          <ul>
+            <li>By default, the Brightcove Chromecast Plugin uses the Brightcove Cast Receiver app, but you can use your own receiver app.</li>
+            <li>The Brightcove Cast Receiver app does not support Chromecast queueing.</li>
+            <li>For Chromecast to work with domain restricted players, you should whitelist the Chromecast receiver's domain, which is <code translate="No">players.brightcove.net</code>.</li>
+          </ul> 
         </aside>
       </li>
     </ul>
