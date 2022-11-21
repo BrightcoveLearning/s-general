@@ -2,11 +2,11 @@
   <section class="bcls-section">
     <h2 id="Introduction">Introduction</h2>
     <p>
-      Google Chromecast is a device that you plug into your TV's HDMI port. Using your smartphone or computer as a remote control, you can use Chromecast to access video content. The Chromecast Plugin enables a Brightcove player to cast video from your 
+      Google Chromecast is a device that you plug into your TV's HDMI port. Using your smartphone or computer as a remote control, you can use Chromecast to access video content. The Chromecast Plugin enables a player to cast video from your 
       {% if site.product_short == "SDKs" %}
-        Android or iOS device
+        mobile device app using the Brightcove Native SDKs
         {% else %}
-        desktop or Android Chrome browser
+        desktop or Android Chrome browser using Brightcove Player
         {% endif %} 
         to the Chromecast device.
     </p>
@@ -36,7 +36,7 @@
     <ul>
       <li>
         <p>
-          <strong>Sender application</strong>: This is any application that can initiate a cast session and communicate with a receiver. The sender application can be thought of as the "client side" portion of the Chromecast ecosystem.
+          <strong>Sender app</strong>: This is any application that can initiate a cast session and communicate with a receiver. The sender application can be thought of as the "client side" portion of the Chromecast ecosystem.
         </p>
         <p>
           {% if site.product_short == "SDKs" %}
@@ -49,14 +49,14 @@
       </li>
       <li>
         <p>
-          <strong>Receiver application</strong>: This is a custom web application that is hosted on the public internet and runs on a Chromecast device. It handles communication between the sender app and the receiver device. It can be thought of as a single page HTML app with CSS and JavaScript assets.
+          <strong>Receiver app</strong>: This is a custom web application that is hosted on the public internet and runs on a Chromecast device. It handles communication between the sender app and the receiver device. It can be thought of as a single page HTML app with CSS and JavaScript assets.
         </p>
+        <p>By default, the Chromecast Plugin uses the Brightcove Cast Receiver app, which is hosted on our CDN. The receiver app is a web application that is loaded onto the Chromecast during a cast session.</p>
         <!-- <p>
  As a Brightcove Player customer, you do not need to work with the code and configuration of the receiver application. By default, this plugin uses the Brightcove receiver app.
  </p> -->
         <aside class="bcls-aside bcls-aside--information">Notes:
           <ul>
-            <li>By default, the Brightcove Chromecast Plugin uses the Brightcove Cast Receiver app, but you can use your own receiver app.</li>
             <li>The Brightcove Cast Receiver app does not support Chromecast queueing.</li>
             <li>For Chromecast to work with domain restricted players, you should whitelist the Chromecast receiver's domain, which is <code translate="No">players.brightcove.net</code>.</li>
           </ul> 
