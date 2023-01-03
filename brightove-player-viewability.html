@@ -70,12 +70,13 @@
       <pre class="line-numbers"><code class="language-json" translate="No">{
   ... other properties ...
   &quot;viewability&quot;: {
-    &quot;viewability_threshold&quot;: 0.7,
+    &quot;viewability_threshold&quot;: 0.3,
     &quot;pause_when_not_viewable&quot;: true
   }
 }</code></pre>
-      <p>In this example, playback pauses when less than 70% of the player is visible in the browser viewport, caused by the user scrolling the player out of view. Playback resumes when the player becomes visible again.</p>
-</section>
+      <p>In this example, playback pauses when less than 30% of the player is visible in the browser viewport, caused by the user scrolling the player out of view. Playback resumes when the player becomes visible again.</p>
+      <div style="max-width: 960px;"><style>video-js.video-js.vjs-fluid:not(.vjs-audio-only-mode) {padding-top: 56.25%;}</style><video-js data-account="1752604059001" data-player="7cdNyY7cJ" data-embed="default" controls="" data-video-id="3851380732001" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js></div><script src="https://players.brightcove.net/1752604059001/7cdNyY7cJ_default/index.min.js"></script>
+    </section>
 
 <section class="bcls-section">
     <h2 id="Viewability_events">Viewability events</h2>
