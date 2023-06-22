@@ -37,12 +37,12 @@
         Playback is initiated either by the user expressly clicking the play button, or automatically when the platform triggers playback in an auto-play scenario </td>
     </tr>
     <tr>
-      <td><code translate="No">ad_start</code></td>
+      <td><code translate="No">ad_mode_begin</code></td>
       <td>
         Control is handed over to an advertising agent by the playback platform </td>
     </tr>
     <tr>
-      <td><code translate="No">ad_end</code></td>
+      <td><code translate="No">ad_mode_complete</code></td>
       <td>
         Control is handed back from the advertising agent to the playback platform </td>
     </tr>
@@ -55,6 +55,9 @@
       <td><code translate="No">video_complete</code></td>
       <td>
         Video playback finishes
+        <p>
+          <aside class="bcls-aside bcls-aside--information">Note: This event can be retrieved only with Player 6 and is no longer available for Player 7 and above.</aside>
+        </p>
       </td>
     </tr>
   </tbody>
@@ -172,6 +175,109 @@
       <td><code translate="No">bcvideo_video_milestone</code></td>
       <td>
         Sent in <code translate="No">engagement</code> event
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="GTM_variables">GTM Variables</h4>
+<p>These are Brightcove parameters you can create as GTM variables.</p>
+<table class="bcls-table">
+  <thead class="bcls-table__head">
+    <tr>
+      <th style="width:20%">Variable name</th>
+      <th style="width:65%">Description</th>
+    </tr>
+  </thead>
+  <tbody class="bcls-table__body">
+    <tr>
+      <td><code translate="No">account</code></td>
+      <td>
+        Brightcove account ID
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">player</code></td>
+      <td>
+        Player ID
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">player_name</code></td>
+      <td>
+        Player Name
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">platform_version</code></td>
+      <td>
+        Platform version number
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">session</code></td>
+      <td>
+        Session identifier
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">video</code></td>
+      <td>
+        Video ID
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">video_name</code></td>
+      <td>
+        Name of the video
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">range</code></td>
+      <td>
+        The range of seconds viewed in the format StartSecond..EndSecond
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">seconds_viewed</code></td>
+      <td>
+        Count of watched seconds
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">duration</code></td>
+      <td>
+        The duration of the video in seconds
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">percent_viewed</code></td>
+      <td>
+        Percentage of video watched
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">error</code></td>
+      <td>
+        Platform specific error code associated with the event
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">milestone</code></td>
+      <td>
+        Milestone (25%,50%,75%,100%) completed by the video
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">playhead</code></td>
+      <td>
+        The time in the video at which the event is triggered
+      </td>
+    </tr>
+    <tr>
+      <td><code translate="No">destination</code></td>
+      <td>
+        URI that originated the event
       </td>
     </tr>
   </tbody>
